@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="sliders.css"/>
+    <title>iconGenerator</title>
+  </head>
+  <body>
+    <div id="holder" style="display: none;">
+        Drag your file here
+    </div>
+    <div class="header"><p>iconGenerator !</p></div>
+    <div class="container">
+      <div class="prev">
+          <canvas id="impossible"></canvas>
+      </div>
+      <div class="params">
+        <button style="margin-bottom:25px;"  id="uploadButton">Uploader une icone.</button>
+        <p style="align-self: center;width: 100%;margin-bottom:15px;"><input type="text" placeholder="Définir le nom de l'icone.."/></p>
+        <p style="margin-bottom:25px;"><input type="color"/> Couleur de l'icone</p>
+        <p>Taille de la bordure : <div class="range-slider">
+          <input class="range-slider__range" type="range" value="0" min="0" max="10">
+          <span class="range-slider__value">0 px</span>
+        </div></p>
+        <p style="margin-bottom:25px;"><input type="color"/> Couleur de la bordure</p>
+        <p><input type="color"/> Couleur du fond</p>
+        <button style="margin-top:25px;">Télécharger l'icone.</button>
+      </div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
