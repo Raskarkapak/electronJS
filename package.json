@@ -1,0 +1,15 @@
+{
+  "name": "coursjs",
+  "version": "1.0.0",
+  "description": "description vide",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron --disable-gpu ."
+  },
+  "author": "Maxime",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.1"
+  }
+}
